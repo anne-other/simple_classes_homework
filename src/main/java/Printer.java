@@ -1,8 +1,8 @@
 public class Printer {
     private int paper;
 
-    public Printer(int paper) {
-        this.paper = paper;
+    public Printer() {
+        this.paper = 100;
     }
 
     public int getPaper() {
@@ -16,5 +16,9 @@ public class Printer {
         } else {
             return;
         }
+    }
+
+    public void refill() {
+        this.paper = 100;
     }
 }
