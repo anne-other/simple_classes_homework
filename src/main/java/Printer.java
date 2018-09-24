@@ -16,9 +16,10 @@ public class Printer {
     }
 
     public void print(int pages, int copies) {
-        int paperUsed = pages * copies;
-        if (paperUsed < this.paper) {
-            this.paper -= (paperUsed);
+        int Used = pages * copies;
+        if (Used < this.paper) {
+            this.paper -= (Used);
+            this.toner -= (Used);
         } else {
             return;
         }
