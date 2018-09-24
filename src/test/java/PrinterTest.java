@@ -38,4 +38,10 @@ public class PrinterTest {
         int amountOfPaper = printer.getPaper();
         assertEquals(100, amountOfPaper);
     }
+
+    @Test
+    public void printerHasToner() {
+        int toner = printer.getToner();
+        assertEquals(200, toner);
+    }
 }
