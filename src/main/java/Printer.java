@@ -10,6 +10,11 @@ public class Printer {
     }
 
     public void print(int pages, int copies) {
-        this.paper -= (pages * copies);
+        int paperUsed = pages * copies;
+        if (paperUsed < this.paper) {
+            this.paper -= (paperUsed);
+        } else {
+            return;
+        }
     }
 }

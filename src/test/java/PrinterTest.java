@@ -23,4 +23,11 @@ public class PrinterTest {
         int amountLeft = printer.getPaper();
         assertEquals(90, amountLeft);
     }
+
+    @Test
+    public void printerWontPrintIfNotEnoughPaper() {
+        printer.print(20, 6);
+        int amountLeft = printer.getPaper();
+        assertEquals(100, amountLeft);
+    }
 }
