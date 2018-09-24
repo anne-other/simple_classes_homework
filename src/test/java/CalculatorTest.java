@@ -29,4 +29,10 @@ public class CalculatorTest {
         assertEquals(6, multiplication);
     }
 
+    @Test
+    public void canDivide(){
+        double division = calculator.divide(6, 2);
+        assertEquals(3.0, division, 0.1);
+    }
+
 }
