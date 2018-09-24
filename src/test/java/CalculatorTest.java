@@ -23,4 +23,10 @@ public class CalculatorTest {
         assertEquals(1, subtraction);
     }
 
+    @Test
+    public void canMultiply(){
+        int multiplication = calculator.multiply(2, 3);
+        assertEquals(6, multiplication);
+    }
+
 }
