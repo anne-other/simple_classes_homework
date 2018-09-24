@@ -8,4 +8,8 @@ public class Printer {
     public int getPaper() {
         return paper;
     }
+
+    public void print(int pages, int copies) {
+        this.paper -= (pages * copies);
+    }
 }

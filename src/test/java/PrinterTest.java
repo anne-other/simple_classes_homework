@@ -12,8 +12,15 @@ public class PrinterTest {
     }
 
     @Test
-    public void printerHasPaper(){
+    public void printerHasPaper() {
         int amountOfPaper = printer.getPaper();
         assertEquals(100, amountOfPaper);
+    }
+
+    @Test
+    public void printReducesPaperByPagesAndCopies() {
+        printer.print(5, 2);
+        int amountLeft = printer.getPaper();
+        assertEquals(90, amountLeft);
     }
 }
